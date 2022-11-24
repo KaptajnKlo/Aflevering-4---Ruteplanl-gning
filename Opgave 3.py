@@ -92,7 +92,7 @@ def displaySolution(model: pyomo.ConcreteModel()):
     # Plot with different colors
     plt.scatter(model.xCoordinates, model.yCoordinates, c=labels)
     for i, label in enumerate(ptNumber):
-        plt.annotate(ptNumber[i], (model.xCoordinates[i], model.yCoordinates[i]))
+        plt.annotate(ptNumber[i]+1, (model.xCoordinates[i], model.yCoordinates[i]))
     plt.show()
 
 

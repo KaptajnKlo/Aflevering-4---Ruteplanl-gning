@@ -86,11 +86,11 @@ def displaySolution(model: pyomo.ConcreteModel(), data: dict):
                     displayX.append(data['xCord'][i])
                     displayY.append(data['yCord'][i])
                 if i > 0:
-                    print(data["Index"][i], '->', end='')
+                    print(i, '->', end='')
                     if coordinatesPresent:
                         labels.append(i)
                 else:
-                    print(data["Index"][i], end='')
+                    print(i, end='')
                 tmpCurNode = i
         curNode = tmpCurNode
         if curNode < 1:
